@@ -1,6 +1,6 @@
 const getData = async() => {
     try{
-        const response = await axios.get("https://jsonplaceholder.typicode.com/users", {
+        const response = await postsFetch.get("/users", {
             headers: {
                 "Content-Type": "application/json",
             }
@@ -29,3 +29,16 @@ const printData = async() => {
 }
 
 printData();
+
+const form = document.querySelector("#post-form");
+const title = document.querySelector("#title");
+const body = document.querySelector("#body");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    postsFetch.post("/posts", {
+        title: title.value , 
+        body: body.value, 
+        userId: 1
+    });
+});
