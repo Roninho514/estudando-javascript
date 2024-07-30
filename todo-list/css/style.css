@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    color: #333;
+}
+
+body {
+    background-image: url("../img/background.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+
+html{
+    height: 100vh;
+}
+
+.container-todo {
+    max-width: 450px;
+    margin: 3rem auto 0;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    padding: 0.4rem 0 1.3rem 0;
+    border-bottom: 1px solid #ccc ;
+}
+
+#task-form{
+    margin-top: 0.8rem;
+    padding-bottom: 1.3rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.control-form{
+    display: flex;
+    margin-top: 4px;
+}
+
+.control-form button{
+    margin-left: 2px;
+}
+
+#tollbar{
+    display: flex;
+    align-items: center;
+    margin-top: 0.3rem;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.8rem;
+}
+
+#edit-todo-form{
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#edit-form-button{
+    margin-top: 1rem;
+}
+
+.done {
+    background: #395169;
+}
+  
+.done h3 {
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+
+#tollbar input, button, select{
+    margin-top: 0.3rem;
+}
+
+#erase-button{
+    margin-left: 2px;
+}
+
+
+#search form{
+    display: flex;
+}
+
+#search{
+    width: 249px;
+    border-right: 1px solid #ccc;
+}
+
+#filter{
+    margin-left: 0.6rem;
+}
+
+#listTodo{
+    margin-top: 1.3rem ;
+    display: flex;
+    flex-direction: column;
+}
+
+.todo{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    transition: 0.3s;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button{
+    margin-left: 0.4rem;
+}
+
+
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: 0.3rem 0.6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+  
+button:hover {
+  background-color: #102f5e;
+  color: #fff;
+}
+
+button:hover > i {
+  color: #fff;
+}
+
+
+button i {
+  pointer-events: none;
+  color: #102f5e;
+  font-weight: bold;
+}
+
+input,
+select {
+  padding: 0.25rem 0.5rem;
+}
+
+#filter select {
+    flex: 1;
+    width: 7rem;
+}
+
+.hide{
+    display: none !important;
+    visibility: hidden !important;
+}
+  
+.finish-todo:hover .todo{
+    background: #395169;
+}
